@@ -1,0 +1,27 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(170,63,63,1) 36%, rgba(255,0,50,1) 100%);
+    /* color: aliceblue; = Changer la couleur de toute les balises */
+}
+
+/* Pour changer plusieurs balise cest comme ca mais regarde en dessous
+ h1, h2, h3, h4, h5, h6 {
+    color: aliceblue;
+} */
+
+/* Selectionne un element via une class*/
+
+.White {
+    color: aliceblue;
+}
+
+.Italic {
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* Selectionne un element via un id*/
+
+#Opacité {
+    opacity: 0,5;
+}

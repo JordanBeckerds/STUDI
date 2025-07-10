@@ -1,0 +1,38 @@
+body {
+    background-color: whitesmoke;
+}
+
+p {
+    background-color: chartreuse;
+}
+
+a {
+    background-color: black;
+    color: aliceblue;
+}
+
+img {
+    background-color: blueviolet;
+    width: 500px;
+    padding: 10px;
+}
+
+/* classes */
+
+.block {
+    display: block;
+    background-color: aqua;
+    margin: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: tomato;
+    margin: 10px;
+    /* ne peux pas etre modifier en taille */
+}
+
+.inline_block { /* meilleur a utiliser  */
+    display: inline-block;
+    background-color: darkblue;
+}

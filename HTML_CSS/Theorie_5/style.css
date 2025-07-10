@@ -1,0 +1,74 @@
+body {
+    background-color: grey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* classes */
+
+.container {
+    width: 100%;
+    border: 10px solid black;
+    display: flex;
+}
+
+/* vw = view port width (taille de la fenetre) vh = view port height (taille de la fenetre) % = taille du parent */
+.left {
+    width: 50%;
+    background-color: turquoise;
+}
+
+.right {
+    width: 50%;
+    height: 100vh;
+    background-color: red;
+}
+
+/* New shit */
+
+/* condition que ca ne depasse pas "variable" */ 
+@media (max-width: 1000px) {
+    .right {
+        background-color: forestgreen;
+        flex-grow: 1;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .right {
+        background-color: purple;
+    }
+}
+
+/* condition que ca depasse la "variable" */ 
+@media (min-width: 500px) {
+    .left {
+        background-color: purple;
+    }
+}
+
+/* orientation landscape/portrait */
+@media (max-width: 500px) and (orientation: landscape) {
+    h1 {
+        color: white
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    h1 {
+        font-size: 14px;
+    }
+}

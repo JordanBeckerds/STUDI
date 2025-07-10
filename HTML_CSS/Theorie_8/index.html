@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mon formulaire de contact</title>
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="contact-wrapper">
+      <form class="form-horizontal" method="post" action="contact.php">
+        <h1 class="section-header">Postulez !</h1>
+
+        <label for="name">Nom</label>
+        <input type="text" id="name" placeholder="nom" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+        
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" placeholder="0600000000" name="phone">
+
+        <label for="CV">Déposer CV</label>
+        <input type="file" id="CV" name="CV">
+
+        <label for="category">Quelle formation</label>
+        <select id="category" name="category">
+          <option value="default">Choisissez une catégorie</option>
+          <option value="Manager">Manager</option>
+          <option value="assistant">Assistant</option>
+          <option value="dev">Developper</option>
+          <option value="dev_head">Head developper</option>
+        </select>
+        
+        <label for="info">Information importante</label>
+        <textarea rows="10" id="info" name="info" required></textarea>
+
+        <button class="send-button" id="submit" type="submit">Envoyer</button>
+
+        <div class="advert-wrapper">
+          <p>Souhaitez-vous recevoir nos news pour d'autre post ?</p>
+          <input type="radio" id="yes" name="news-question" value="yes" checked>
+          <label for="yes">Oui</label>
+          <input type="radio" id="no" name="news-question" value="no">
+          <label for="no">Non</label>
+        </div>
+      </form>
+    </div>
+  </body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+      border-radius: 20px;
+      margin-bottom: 2rem;
+    }
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    input, textarea, select {
+      margin-bottom: 1rem;
+      border-radius: 7px;
+      padding: 0.3rem;
+      border: solid 1px;
+    }
+    textarea {
+      max-width: 400px;
+      letter-spacing: 1px;
+    }
+    input:focus, textarea:focus, select:focus, button:focus {
+      outline: none;
+      box-shadow: 0px 0px 11px -7px #bac4bf;
+      border: solid 1px #d5e1db;
+    }
+    label {
+      margin-bottom: 0.5rem;
+    }
+    .section-header {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      font: 300 2rem 'Oswald', sans-serif;
+      letter-spacing: 6px;
+      margin-bottom: 25px;
+    }
+    .form-horizontal {
+      max-width: 400px;
+      font-family: 'Lato';
+      font-weight: 400;
+    }
+    .send-button {
+      margin-top: 15px;
+      height: 34px;
+      width: 400px;
+      background-color: #d5e1db;
+      border: none;
+      border-radius: 7px;
+      font: 300 14px 'Lato', sans-serif;
+      letter-spacing: 2px;
+    }
+    .send-button:hover {
+      cursor: pointer;
+      color: white;
+      background-color: #bac4bf;
+    }
+    .advert-wrapper {
+      color: grey;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+    }
+  </style>
+</html>

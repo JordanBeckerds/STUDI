@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <title>Recode StationF</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <header class="header flux">
+        <div class="top">
+            <img src="https://github.com/charline-studi/2209-html-css/blob/main/assets/logo.png?raw=true"
+            alt="Logo de StationF" class="logo">
+
+            <p class="btn option" onclick="myfunction()">Options</p>
+        </div>
+        <nav>
+            <ul class="list_links">
+                <li class="nav_link">
+                    <a href="https://stationf.co/" target="_blank">Programmes Start-up</a>
+                </li>
+
+                <li class="nav_link">
+                    <a href="https://stationf.co/" target="_blank">Services</a>
+                </li>
+
+                <li class="nav_link">
+                    <a href="https://stationf.co/" target="_blank">Logement</a>
+                </li>
+
+                <li class="nav_link">
+                    <a href="https://stationf.co/" target="_blank">événement</a>
+                </li>
+
+                <li class="nav_link separation">
+                    <a href="https://stationf.co/" target="_blank">Newsroom</a>
+                </li>
+                <li>
+                    <select name="langs" id="langs" class="langs_deco trans">
+                        <option value="FR" onclick="FR()">FR</option>
+                        <option value="EN" onclick="EN()">EN</option>
+                    </select>
+                </li>
+                <li class="nav_link">
+                    <a href="Postuler/index.html" class="btn" target="_blank">Postuler</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cover flux">
+            <div class="cover_text">
+                <h1 class="cover_title" id="cover_title">Plus grand campus de start-up du monde à Paris</h1>
+                <p class="cover_intro" id="cover_intro">Rejoignez un campus unique et une communauté de plus de 1.000 start-up, 30 programmes d'accompagnement et de nombreux services au coeur de Paris.</p>
+                <a href="" class="icon_scroll">
+                    <img src="img/arrow-down-s-line.svg" alt="Cliquez ici pour acceder a la section ..." class="">
+                </a>
+                
+            </div>
+
+            <p class="icon_scroll_phone btn">Lire plus</p>
+
+            <img src="https://github.com/charline-studi/2209-html-css/blob/main/assets/home.jpg?raw=true" alt="Photographe des locaux de Station F" class="image_office">
+  
+        </section>
+        
+        <section class="background_companies">
+            <div class="flux companies">
+                <div class="companies_text ">
+                    <h2 class="h2_companies" id="h2_companies">Donner le pouvoir à la prochaine génération d'entrepreneurs</h2>
+                    <p id="p_companies">Avec des ressources disponibles sur le campus et en ligne - dont une large communauté d'investisseurs, plus de 150 perks, 35 administrations publiques et 600 événements par an - STATION F offre tout ce dont les entrepreneurs ont besoin pour lancer et développer leurs projets. </p>
+                    <a href="https://stationf.co/programs" target="_blank" class="yellow_btn"><p id="yellow_btn">Trouver mon programme</p></a>
+                </div>
+                <div class="logo_list">
+                    <a href="https://www.lvmh.fr/" target="_blank"><img src="https://stationf.co/img/home/lvmh.png" alt="LVMH Logo" class="logos_LVMH"></a>
+                    <a href="https://stationf.co/apply" target="_blank"><img src="https://stationf.co/img/home/founders.png" alt="Founders Program" class="logos_founders"></a>
+                    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj7lZWj2bj-AhUCCQYAHTK7BR8YABAAGgJ3cw&ohost=www.google.com&cid=CAESbeD2yZhjNap-S3aiPWLhBTNJ9c7WNQmsXDPkQUXpI1t7pAanYreOMd5-PzdVS8X-rxQpL8fcbKdP8KcXKsfU964nIxwjxK8nZNO--PQ3u-Qmn4E_F5kzX-9DhZFntkf6CNftc_lZ9Ev87IpM-pQ&sig=AOD64_2D6xeyQZ1s5KA45gR6ThQ7JN4S1w&q&adurl&ved=2ahUKEwjc_Y2j2bj-AhUdVqQEHWfpDpIQ0Qx6BAgGEAE" target="_blank"><img src="https://stationf.co/img/home/ef.png" alt="EN?" class="logos_EN"></a>
+                    <a href="https://www.microsoft.com/fr-fr" target="_blank"><img src="https://stationf.co/img/home/microsoft.png" alt="Microsoft Logo" class="logos_micro"></a>
+                    <a href="https://www.edhec.edu/fr" target="_blank"><img src="https://stationf.co/img/home/edhec.png" alt="EDHEC Logo" class="logos_ED"></a>
+                    <a href="https://www.centralesupelec.fr/" target="_blank"><img src="https://stationf.co/img/home/centralesupelec.png" alt="CentraleSupélec Logo" class="logos_central"></a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="launch">
+            <div class="launch_content">
+                    <img src="https://stationf.co/img/home/launch.png" alt="" class="launch_img">
+                <div class="launch_text">
+                    <h2 class="h2_launch" id="h2_launch">Launch by STATION F</h2>
+                    <p class="p_launch" id="p_launch">Vous avez une idée ? Vous souhaitez lancer votre start-up ou en apprendre plus sur l'entrepreneuriat ? Launch by STATION F est le programme 100% en ligne de STATION F sur tous les sujets pour se lancer ! Le programme regroupe de nombreux cours en vidéo, une large librairie d'outils avec des accès à prix réduit et une communauté pour vous aider avec votre idée. </p>
+                    <a href="https://launch.stationf.co/" class="launch_btn btn" target="_blank" id="btn_launch">Découvrir</a>
+                </div>
+            </div>
+        </section>
+        <section class="exemples flux">
+            <h2 class="h2_exemples">Entrepreneurs & Start-up</h2>
+            <div class="img_exemples_list">
+                <a href="https://stationf.co/news/building-something-with-ying-shao-co-founder-ceo-of-plantik-biosciences">
+                    <div class="img_ying">
+                        <img class="img_exemples" src="https://s3.eu-west-3.amazonaws.com/stationf.co.prod/newsroom/covers/53285d6e-4bdd-4587-bc36-fd134fbac5e6.png" alt="">
+                        <p class="text_exemples">Ying Shao, Co-Founder & CEO of Plantik Biosciences</p>
+                    </div>
+                </a>
+                <a href="https://stationf.co/news/meet-ictyos-the-startup-transforming-fish-skin-into-leather">
+                    <div class="img_meet">
+                        <img class="img_exemples" src="https://s3.eu-west-3.amazonaws.com/stationf.co.prod/newsroom/covers/c14dac61-202f-44a7-8be0-f99d1f791670.jpeg" alt="">
+                        <p class="text_exemples">Meet Ictyos, the startup transforming fish skin into leather</p>
+                    </div>
+                </a>
+                <a href="https://stationf.co/news/BuildingSomethingwithEmmaButlerFounder&CEOofIntimately">
+                    <div class="img_ying">
+                        <img class="img_exemples" src="https://s3.eu-west-3.amazonaws.com/stationf.co.prod/newsroom/covers/64ae8961-9508-4c87-be2d-e2e9d69ca4cc.png" alt="">
+                        <p class="text_exemples">Emma Butler, Founder & CEO of Intimately</p>
+                    </div>
+                </a>
+                <a href="https://stationf.co/news/meet-a-fighter-andy-cleraux-co-founder-of-fibrany">
+                    <div class="img_ying">
+                        <img class="img_exemples" src="https://s3.eu-west-3.amazonaws.com/stationf.co.prod/newsroom/covers/7c8dc2d7-4a83-43a0-9ffa-270812ea6e55.jpeg" alt="">
+                        <p class="text_exemples">Andy Cleraux, co-founder of Fibrany</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="actuality">
+            <div class="flux">
+                <div class="actuality_head">
+                <h2 class="h2_actuality">Dernières actualités</h2>
+                <p class="yellow_btn_actuality voir_plus">Voir plus</p>    
+                </div>
+                <div class="img_actuality">
+                    <div class="bistack">
+                        <img class="img_bistack" src="https://s3.eu-west-3.amazonaws.com/stationf.co.prod/newsroom/covers/2f5b4cfa-446c-45b3-ae04-dc83de094dd4.png" alt="">
+                        <p class="text_bistack">Bitstack (Founders Program) raises €2M to democratize Bitcoin in France</p>
+                    </div>
+                    <div class="data">
+                        <img class="img_data" src="https://s3.eu-west-3.amazonaws.com/stationf.co.prod/newsroom/covers/63e13e13-1de1-40a3-ac77-06be3cb87ac1.png" alt="">
+                        <p class="text_data">Frédéric Montagnon (Arianee) on the future of data ownership</p>
+                        <div>
+                            <div>
+                                <img class="img_palm" src="https://s3.eu-west-3.amazonaws.com/stationf.co.prod/newsroom/covers/42274e9a-7093-46e3-b37e-8ffc5caa72d3.png" alt="">
+                                <p class="text_palm">Palm (Future 40) raises €2M to transform talent management and retention with AI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

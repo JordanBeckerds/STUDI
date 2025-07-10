@@ -1,0 +1,28 @@
+#body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 5vh auto;
+}
+  
+.category-selector {
+    margin-bottom: 20px;
+}
+  
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.img {
+    width: 250px;
+    height: auto;
+    margin: 5px;
+    
+}
+  

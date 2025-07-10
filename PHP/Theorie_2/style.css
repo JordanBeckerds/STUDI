@@ -1,0 +1,43 @@
+h1 {
+    position: absolute;
+    top: 10px;
+    text-transform: uppercase;
+}
+
+
+/* classes */
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register_form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.input {
+    background-color: black;
+    border-style: solid;
+    border-color: #FF0000;
+    color: aliceblue;
+    width: 350px;
+    height: 35px;
+}
+
+.register_btn {
+    background-color: black;
+    color: aliceblue;
+    border-style: solid;
+    border-color: #FF0000;
+    height: 40px;
+    width: 75px;
+    border-radius: 35px;
+}

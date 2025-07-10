@@ -1,0 +1,72 @@
+body {
+    background-color: darkgray;
+}
+
+h1 {
+    background-color: black;
+    color: red;
+}
+
+p {
+    background-color: black;
+    color: aliceblue;
+}
+
+div {
+    background-color: aqua;
+}
+
+img {
+    max-width: 600px;
+    max-height: 400px;
+}
+
+/*Class*/
+
+.red {
+    color: rgb(255, 0, 0);
+}
+
+.white {
+    color: aliceblue;
+}
+
+.intro {
+    background-color: honeydew;
+}
+
+.title {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Ne sert pas réelement "left" automatique*/
+.left {
+    text-align: left;
+}
+
+/* Flex */
+
+.flex {
+    background-color: chocolate;
+    flex-wrap: wrap; /* nowrap */
+}
+
+.cover {
+    display: flex;
+}
+
+.bloc {
+    padding: 10px;
+    background-color: black;
+    border: 2px;
+    border-style: solid;
+    border-color: antiquewhite;
+}

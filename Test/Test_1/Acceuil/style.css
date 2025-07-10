@@ -1,0 +1,20 @@
+body {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+header {
+    position: absolute;
+}
+
+#sec-1 {
+    text-align: center;
+}
+
+#title {
+    font-size: 10vh;
+    color: aliceblue;
+    text-shadow: 5px 5px rgb(32, 31, 31);
+    height: 100vh;
+}

@@ -1,0 +1,49 @@
+body {
+    background-color: grey;
+}
+
+/* classes */
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Fluidité (transition: ((obligatoire = (quoi) (temps) (comment)) (delay))*/
+    transition: 
+        transform 2s cubic-bezier(.63,1.57,1,1.94);
+    transition: all 2s linear;
+}
+
+.square:hover {
+    background-color: skyblue;
+    width: 200px;
+    height: 200px;
+
+    /*transform*/
+    transform: rotate(180deg); /*présicé (deg) */
+
+    transition: all 4s linear;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+
+    transition: opacity 2s linear 2s;
+
+}
+
+/* ciblé (square) */
+.square:hover p {
+    color: aliceblue;
+    opacity: 0;
+}
+
+/* ciblé (p) */
+.square p:hover {
+    color: darkblue;
+}

@@ -1,0 +1,31 @@
+body {
+    background-color: grey  ;
+}
+
+
+
+/* classes */
+
+.container {
+    display: flex;
+    height: 150px;
+    flex-wrap: wrap;
+    gap: 10px 20px ;
+    /* gap: height(10px) width(10px); */
+    background-color: cornflowerblue;
+    justify-content: space-between;
+    /* overrides "gap" */
+    align-items: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    order: 1;
+}
+.four {
+    order: 0;
+    background-color: red;
+}

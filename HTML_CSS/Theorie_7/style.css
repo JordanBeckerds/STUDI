@@ -1,0 +1,7 @@
+table {
+    /* effet different du border en html et prend pas en compte <caption>*/
+    /* aller regarde bonne gramaire dans exercise */
+    border: 2px;
+    border-style: solid;
+    padding: 20px;
+}

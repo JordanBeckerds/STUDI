@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postuler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contact-wrapper">
+      <form class="form-horizontal" method="post" action="contact.php">
+        <h1 class="section-header">Postulez !</h1> <!-- Titre -->
+
+        <label for="name">Nom</label>
+        <input type="text" id="name" placeholder="nom" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+        
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" placeholder="0600000000" name="phone">
+
+        <label for="CV">Déposer CV</label>
+        <input type="file" id="CV" name="CV"> <!-- fields -->
+
+        <label for="category">Quelle formation</label>
+        <select id="category" name="category">
+          <option value="default">Choisissez une catégorie</option>
+          <option value="Manager">Manager</option>
+          <option value="assistant">Assistant</option>
+          <option value="dev">Developper</option>
+          <option value="dev_head">Head developper</option>
+        </select>
+        
+        <label for="info">Information importante</label>
+        <textarea rows="10" id="info" name="info" required></textarea>
+
+        <button class="send-button" id="submit" type="submit">Envoyer</button>
+
+        <div class="advert-wrapper">
+          <p>Souhaitez-vous recevoir nos news pour d'autre post ?</p>
+          <input type="radio" id="yes" name="news-question" value="yes" checked>
+          <label for="yes">Oui</label>
+          <input type="radio" id="no" name="news-question" value="no">
+          <label for="no">Non</label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
